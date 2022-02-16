@@ -1,0 +1,18 @@
+general:
+  dest_path: saved_models/our_rpn.pt
+  name: our_rpn
+  test: true
+  train: true
+  disable_tqdm: false
+model:
+  model: RPN
+  params:
+    pretrained: true
+training:
+  batch_size: 16
+  init_lr: 0.002
+  lr_scheduler: ExpDecayLRCallback
+  lr_scheduler_kwargs:
+    freq: 500
+    gamma: 0.5
+  num_batches: 3000

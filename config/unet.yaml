@@ -1,0 +1,17 @@
+general:
+  dest_path: saved_models/unet.pt
+  name: unet
+  test: true
+  train: true
+  disable_tqdm: false
+model:
+  model: UNet
+  params: {}
+training:
+  batch_size: 4
+  init_lr: 0.001
+  lr_scheduler: ExpDecayLRCallback
+  lr_scheduler_kwargs:
+    freq: 2000
+    gamma: 0.5
+  num_batches: 12000

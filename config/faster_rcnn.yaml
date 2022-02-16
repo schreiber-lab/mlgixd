@@ -1,0 +1,18 @@
+general:
+  dest_path: saved_models/faster_rcnn.pt
+  name: faster_rcnn
+  test: true
+  train: true
+  disable_tqdm: false
+model:
+  model: FasterRCNN
+  params:
+    pretrained: true
+training:
+  batch_size: 4
+  init_lr: 0.0005
+  lr_scheduler: ExpDecayLRCallback
+  lr_scheduler_kwargs:
+    freq: 2000
+    gamma: 0.5
+  num_batches: 12000

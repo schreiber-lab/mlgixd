@@ -1,0 +1,21 @@
+general:
+  dest_path: saved_models/test.pt
+  name: test
+  test: true
+  train: true
+  disable_tqdm: false
+  evaluate_fps: 10
+model:
+  model: ModifiedFasterRCNN
+  params:
+    pretrained: true
+sim_metrics:
+  num: 10
+training:
+  batch_size: 2
+  init_lr: 0.002
+  lr_scheduler: ExpDecayLRCallback
+  lr_scheduler_kwargs:
+    freq: 2
+    gamma: 0.5
+  num_batches: 10
