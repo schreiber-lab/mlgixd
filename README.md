@@ -3,8 +3,7 @@
 
 The package provides the source code used in the following scientific publication: 
 
-[1] _Tracking perovskite crystallization via deep learning-based feature detection on 2D X-ray scattering data_   
-V. Starostin, V. Munteanu, A. Greco, E. Kneschaurek, A. Pleli, F. Bertram, A. Gerlach, A. Hinderhofer, and F. Schreiber (submitted 2021).
+Starostin, V., Munteanu, V., Greco, A. et al. Tracking perovskite crystallization via deep learning-based feature detection on 2D X-ray scattering data. npj Comput Mater 8, 101 (2022). https://doi.org/10.1038/s41524-022-00778-8
 
 
 ## Installation
